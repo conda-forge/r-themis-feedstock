@@ -1,4 +1,4 @@
-{% set version = '0.1.1' %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/themis_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/themis/themis_{{ version }}.tar.gz
-  sha256: 8c025a6546f57fbc48e06ceba6b7cbbb9bcc663e2617552d541bec4ce075a927
+  sha256: 31912b9a3bb24ad87fa65eb79cdbdabe08aeb6efce21a11bd6f7af67574bd403
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -58,15 +58,11 @@ test:
 about:
   home: https://github.com/tidymodels/themis
   license: MIT
-  summary: A dataset with an uneven number of cases in each class is said to be unbalanced. Many
-    models produce a subpar performance on unbalanced datasets. A dataset can be balanced
-    by increasing the number of minority cases using SMOTE 2011 <arXiv:1106.1813>, BorderlineSMOTE
-    2005 <doi:10.1007/11538059_91> and ADASYN 2008 <https://ieeexplore.ieee.org/document/4633969>.
-    Or by decreasing the number of majority cases using NearMiss 2003 <https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf>
-    or Tomek link removal 1976 <https://ieeexplore.ieee.org/document/4309452>.
+  summary: A dataset with an uneven number of cases in each class is said to be unbalanced. Many models produce a subpar performance on unbalanced datasets. A dataset can be balanced by increasing the number of minority cases using SMOTE 2011 <arXiv:1106.1813>, BorderlineSMOTE 2005 <doi:10.1007/11538059_91> and ADASYN 2008
+    <https://ieeexplore.ieee.org/document/4633969>. Or by decreasing the number of majority cases using NearMiss 2003 <https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf> or Tomek link removal 1976 <https://ieeexplore.ieee.org/document/4309452>.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
