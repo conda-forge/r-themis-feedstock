@@ -1,4 +1,4 @@
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/themis_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/themis/themis_{{ version }}.tar.gz
-  sha256: 583f42f32f85c05a9fd7f1e457df4d0c0a85238de4103a33f04b77c05596456f
+  sha256: 89028fab3e55246de1cdae7cd5975fd6d1c7b035cbfeb59fd4c147ffbc6c877d
 
 build:
   merge_build_host: true  # [win]
