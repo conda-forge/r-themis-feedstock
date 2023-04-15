@@ -1,11 +1,11 @@
-About r-themis
-==============
+About r-themis-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-themis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tidymodels/themis
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-themis-feedstock/blob/main/LICENSE.txt)
 
 Summary: A dataset with an uneven number of cases in each class is said to be unbalanced. Many models produce a subpar performance on unbalanced datasets. A dataset can be balanced by increasing the number of minority cases using SMOTE 2011 <arXiv:1106.1813>, BorderlineSMOTE 2005 <doi:10.1007/11538059_91> and ADASYN 2008 <https://ieeexplore.ieee.org/document/4633969>. Or by decreasing the number of majority cases using NearMiss 2003 <https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf> or Tomek link removal 1976 <https://ieeexplore.ieee.org/document/4309452>.
 
